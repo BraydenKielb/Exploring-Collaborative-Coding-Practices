@@ -5,7 +5,6 @@ def generateNumber():
     return random.randint(1, 100)
 
 def play_game(number, guess):
-    """Run the guessing game using given number and initial guess."""
     target = number
     while guess != target:
         try:
@@ -26,4 +25,5 @@ def play_game(number, guess):
 
 number = generateNumber()
 guess = int(input("Guess a number between 1 and 100: "))
+
 play_game(number, guess)
