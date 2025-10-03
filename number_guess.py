@@ -30,3 +30,5 @@ def play_game():
             continue
         feedback = check_guess(target, guess)
         print(feedback)
+
+play_game()
